@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "test",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/test.js",
+            "args": [
+                "--no-cache"
+            ],
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "env": {
+                "CHROMIUM_EXECUTABLE_PATH": "R:\\chrome-win64\\chrome.exe",
+            },
+            "skipFiles": [
+                // "<node_internals>/**",
+                // "${workspaceFolder}/node_modules/**",
+            ],
+        },
+        {
+            "name": "rsshub",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/lib/index.ts",
+            "args": [
+                "--no-cache"
+            ],
+            "env": {
+                "CHROMIUM_EXECUTABLE_PATH": "R:\\chrome-win64\\chrome.exe",
+            },
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                // "<node_internals>/**",
+                // "${workspaceFolder}/node_modules/**",
+            ],
+        }
+    ]
+}
